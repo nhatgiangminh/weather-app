@@ -7,9 +7,9 @@ export const weatherStore = defineStore('weather', {
   state: () => {
     return {
       listPlace: [] as Object[],
-      weatherData: {} as Object,
+      weatherData: {} as any,
       currentWeatherData: {} as any,
-      listSavedCity: [] as Object[]
+      listSavedCity: [] as any
     }
   },
   getters: {
