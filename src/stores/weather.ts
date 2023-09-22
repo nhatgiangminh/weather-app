@@ -26,7 +26,7 @@ export const weatherStore = defineStore('weather', {
   actions: {
     async fetchListPlace(name: string):Promise<any> {
       try {
-        const res = await axios.get('http://api.openweathermap.org/geo/1.0/direct', { params: {
+        const res = await axios.get('https://api.openweathermap.org/geo/1.0/direct', { params: {
           q: name,
           limit: 5,
           appid: 'ede1ba0cf2f5b7456b4b1e368ccef375'
